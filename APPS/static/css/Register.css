@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: rgb(37, 27, 27);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header{
+    width: 11%;
+    height: 30px;
+    display: flex;
+    padding: 0 20px;
+}
+
+.logo a{
+    text-shadow: 1px 1px #525151;
+    color: rgb(24, 39, 248);
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fromRegistro{
+    background-attachment: fixed;
+    transition: 1s;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'times rew roman';
+    color: rgb(73, 91, 255);
+    box-shadow: 10px 15px 0px rgb(219, 217, 217);
+    border-radius: 24px;
+}
+
+.fromRegistro h1 {
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    margin-top: 38px;
+    font-family: 'times rew roman';
+    margin-left: 130px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgb(73, 91, 255);
+    
+}
+
+.fromRegistro h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #525151;
+    height: 5px;
+    box-sizing: border-box;
+    border-style: outset;
+    width: 80px;
+}
+
+.fromRegistro .iniciar {
+    margin-top: 15px;
+    font-family: 'times rew roman';
+    margin-left: 100px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.Controls{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    margin-bottom: 16px;
+    border: line-height;
+    font-family: 'times rew roman';
+    font-size: 18px;
+    color: rgb(73, 91, 255);
+    border-radius: 24px;
+}
+::placeholder{
+    color: rgb(73, 91, 255);
+}
+
+.fromRegistro p {
+
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.fromRegistro a {
+
+    color: rgb(73, 91, 255);
+    text-decoration: none;
+}
+
+.fromRegistro a:hover {
+
+    color: rgb(32, 52, 235);
+    text-decoration: underline;
+}
+
+.fromRegistro .botons {
+
+    width: 100%;
+    /*background: rgb(73, 91, 255);*/
+    border: line-height;
+    padding: 12px;
+    color: rgb(73, 91, 255);
+    margin: 16px 0;
+    font-size: 18px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.fromRegistro .botons:hover{
+    background: rgba(77, 74, 242, 0.6);
+    color: white;
+}
+
+@media screen and (max-width: 700px){
+    .fromRegistro{
+        display: block;
+        overflow: hidden;
+    }
+}
+@media screen and (max-height: 200px) {
+    .fromRegistro{
+        display: block;
+        overflow: hidden;
+    }
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 2px; /* ancho barra */
+  }
+  ::-webkit-scrollbar-track {
+    background: black; /* color fondo barra */
+    opacity: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(24, 39, 248); /* color barra */
+    border-radius: 50px; /* borde barra */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(73, 91, 255); /* color barra hover */
+  }

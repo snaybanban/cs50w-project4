@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/Register.css">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="logo">
+                <a href="/">Comercial Avdel</a>
+            </div>
+          <!--  <div class="imagen">
+                <img  src="../static/jpg/Figure (2).png" alt="Figure">
+            </div>-->
+        </section>
+    </header>
+    <section class="fromRegistro">
+
+        <form class="form" method="post">
+            {% csrf_token %}
+            <h1 class="iniciar">Iniciar sesión</h1>
+
+            <input class="Controls" type="user" name="username" id="user" placeholder="Ingrese su correo" required>
+            <input class="Controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+
+            <input class="botons" type="submit" value="Iniciar sesion" required>
+
+            <p><a href="{% url 'register' %}">¿Crear cuenta?</a></p>
+
+        </form>
+
+    </section>
+</body>
+</html>
